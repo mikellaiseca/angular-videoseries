@@ -40,4 +40,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
   todaysDate = new Date()
 
+  itemImageUrl = '../assets/phone.jpeg'
+
+  isUnchanged = true
+
 }

@@ -10,5 +10,14 @@
 {{todaysDate | date: 'long' | uppercase}}
 <br>
 {{'World' | greetingsPipe }}
+<br>
+<img [src]="itemImageUrl">
+<br>
+<button [disabled]="isUnchanged">Disabled Button</button>
+<br>
+<!-- interpolation -->
+<p><img src={{itemImageUrl}} alt="smartphone"></p>
+<!-- prop binding -->
+<p><img [src]="itemImageUrl" alt="smartphone"></p>
 
 <router-outlet></router-outlet>
