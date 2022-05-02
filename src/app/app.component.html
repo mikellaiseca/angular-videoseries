@@ -4,4 +4,11 @@
 <br>
 <app-parent></app-parent>
 
+<button (click)="toggleText($event)">Toggle text</button>
+{{showText}}
+<br>
+{{todaysDate | date: 'long' | uppercase}}
+<br>
+{{'World' | greetingsPipe }}
+
 <router-outlet></router-outlet>

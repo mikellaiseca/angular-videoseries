@@ -30,4 +30,14 @@ export class AppComponent implements OnInit, OnDestroy {
     return b
   }
 
+  showText = false
+
+  toggleText(event: any): void {
+    this.showText = !this.showText
+    console.log(event);
+
+  }
+
+  todaysDate = new Date()
+
 }
