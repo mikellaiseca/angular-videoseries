@@ -2,7 +2,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  templateUrl: './app.component.html'
+  // #11 Event Binding
+  // template: `
+  // <app-item-details (deleteRequest)="deleteItem($event)"></app-item-details>
+  // `
+  // template: `
+  //   <button (click)="onSave()">Save</button>
+  //   `
+  ,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
@@ -43,5 +51,16 @@ export class AppComponent implements OnInit, OnDestroy {
   itemImageUrl = '../assets/phone.jpeg'
 
   isUnchanged = true
+
+  // #11 Event Binding
+  onSave() {
+    console.log('click on save');
+  }
+
+  deleteItem(item: any) {
+    console.log(item);
+  }
+
+  fontSizepx = 16
 
 }

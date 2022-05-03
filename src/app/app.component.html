@@ -6,18 +6,34 @@
 
 <button (click)="toggleText($event)">Toggle text</button>
 {{showText}}
+
 <br>
+
 {{todaysDate | date: 'long' | uppercase}}
+
 <br>
+
 {{'World' | greetingsPipe }}
+
 <br>
+
 <img [src]="itemImageUrl">
+
 <br>
+
 <button [disabled]="isUnchanged">Disabled Button</button>
+
 <br>
+
 <!-- interpolation -->
 <p><img src={{itemImageUrl}} alt="smartphone"></p>
 <!-- prop binding -->
 <p><img [src]="itemImageUrl" alt="smartphone"></p>
+
+<br>
+
+<!-- #12 Two-way binding -->
+<app-sizer [(size)]="fontSizepx"></app-sizer>
+<div [style.font-size.px]="fontSizepx">Resizible text</div>
 
 <router-outlet></router-outlet>
