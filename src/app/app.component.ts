@@ -14,6 +14,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
+
+  // #2 Lifecycle hooks
   intervalSub: any;
 
   ngOnInit(): void {
@@ -30,6 +32,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   title = 'Hello World!'
 
+  // #3 Text interpolation
   getMin(a: number, b: number) {
     if (a < b) {
       return a
@@ -38,6 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
     return b
   }
 
+  // #7 Template statements
   showText = false
 
   toggleText(event: any): void {
@@ -46,8 +50,10 @@ export class AppComponent implements OnInit, OnDestroy {
 
   }
 
+  // #8 Pipe use
   todaysDate = new Date()
 
+  // #9 Property binding
   itemImageUrl = '../assets/phone.jpeg'
 
   isUnchanged = true

@@ -1,14 +1,21 @@
+<!-- #1 Creating components -->
 <app-hello-world> </app-hello-world>
 
+<!-- #3 Text Interpolation -->
 {{getMin(5, 3)}}
+
 <br>
+
+<!-- #4 Component comunication -->
 <app-parent></app-parent>
 
+<!-- #7 Template statements -->
 <button (click)="toggleText($event)">Toggle text</button>
 {{showText}}
 
 <br>
 
+<!-- #8 Pipe use -->
 {{todaysDate | date: 'long' | uppercase}}
 
 <br>
@@ -17,6 +24,7 @@
 
 <br>
 
+<!-- #9 Property binding -->
 <img [src]="itemImageUrl">
 
 <br>
