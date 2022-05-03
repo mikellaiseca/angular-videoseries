@@ -24,7 +24,7 @@ export class AppSizerComponent implements OnInit {
   }
 
   resize(delta: number) {
-    this.size = Math.min(40, Math.max(8 + this.size + delta))
+    this.size = Math.min(40, Math.max(8, + this.size + delta))
     this.sizeChange.emit(this.size)
   }
 

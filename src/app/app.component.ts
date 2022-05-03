@@ -61,6 +61,7 @@ export class AppComponent implements OnInit, OnDestroy {
     console.log(item);
   }
 
+  // #12 Angular Two-way Binding
   fontSizepx = 16
 
 }
